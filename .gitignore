@@ -38,6 +38,32 @@ pip-delete-this-directory.txt
 
 # Unit test / coverage reports
 htmlcov/
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyc
+*.pyo
+
+# Виртуальные окружения
+.venv/
+venv/
+env/
+.env/
+
+# Зависимости uv
+uv.lock
+
+
+# Пакеты и сборки
+build/
+dist/
+*.egg-info/
+MANIFEST
+
+
+# Тестирование
 .tox/
 .nox/
 .coverage
@@ -56,6 +82,10 @@ cover/
 *.pot
 
 # Django stuff:
+.hypothesis/
+.pytest_cache/
+
+# Локальные настройки Django/Flask
 *.log
 local_settings.py
 db.sqlite3
@@ -155,6 +185,76 @@ venv.bak/
 /site
 
 # mypy
+=======
+# === UV-специфичные файлы ===
+.uv/
+uv-cache/
+
+# === Neovim (nvim) ===
+# Локальные сессии и бэкапы
+Session.vim
+*~
+*.swp
+*.swo
+*.un~
+
+# Плагины и конфигурация nvim
+# Раскомментируйте, если не хотите делиться настройками:
+# ~/.config/nvim/
+# ~/.local/share/nvim/
+# ~/.cache/nvim/
+
+# Swap файлы
+[._]*.s[a-v][a-z]
+[._]s[a-v][a-z]
+
+# Session файлы
+Session.vim
+
+# Временные файлы
+*.tmp
+*.temp
+
+# === Общие файлы ОС и редакторов ===
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+# Thumbnails
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+.directory
+
+# Редакторские файлы
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.idea/
+*.komodoproject
+
+# Локальные конфигурационные файлы
+.env
+.envrc
+.python-version
+
+# Логи
+*.log
+
+# Документация
+docs/_build/
+
+# Jupyter
+.ipynb_checkpoints
+
+# MyPy
 .mypy_cache/
 .dmypy.json
 dmypy.json
@@ -205,3 +305,13 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+=======
+# Pyre
+.pyre/
+
+# Cython
+cython_debug/
+
+# Ruff
+.ruff_cache/
+
